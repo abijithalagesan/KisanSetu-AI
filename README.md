@@ -1,136 +1,86 @@
 # 🌾 KisanSetu AI
 
-### AI-Powered Farming Assistant for Tamil Nadu Farmers
+### Empowering Farmers Through Artificial Intelligence
 
-KisanSetu AI is an intelligent, multilingual agricultural assistant designed to help farmers make informed farming decisions through AI-powered guidance, live weather updates, crop-risk alerts, and agricultural market information.
+**KisanSetu AI** is an AI-powered agricultural assistant designed to help farmers in Tamil Nadu access farming guidance, weather insights, crop-risk alerts, and agricultural market information through a simple, multilingual interface.
 
-🏆 **Hackathon Achievement: 2nd Place Winner**  
-🎁 **Prize: ₹6,000 Gift Voucher**
+Built as part of **DevFest on Campus – Chennai 2026**, an initiative of **Google Developer Groups (GDG) Chennai**, organized as an AI Hackathon & Technical Showcase.
 
 ---
 
-## 🚀 Features
+## 💡 About the Project
 
-- 🤖 **AI Farming Assistant** — Get agricultural guidance using Google's Gemini AI.
-- 🌐 **Multilingual Support** — Interact in Tamil and English.
-- 🌦️ **Live Weather Updates** — Access current weather conditions and upcoming forecasts.
-- 🌱 **Crop Risk Alerts** — Receive weather-based risk assessments and farming recommendations.
-- 📈 **Mandi Price Information** — Explore agricultural market prices and compare available markets.
-- 🎙️ **Voice Input** — Ask farming questions using browser-supported speech recognition.
-- 📍 **Location-Based Weather** — Get weather information for your selected location.
-- 💡 **Farmer-Friendly Interface** — Designed to make agricultural information easier to access and understand.
+Farmers need timely, understandable information to make informed decisions about their crops and farming activities. Language barriers, changing weather conditions, and difficulty accessing agricultural information can make these decisions challenging.
 
-## 🛠️ Tech Stack
+KisanSetu AI aims to bridge this gap by combining artificial intelligence, weather data, and agricultural market information into a farmer-friendly platform that supports Tamil and English.
 
-**Frontend**
-- React.js
-- Vite
-- JavaScript
-- CSS
-- Lucide React
-- React Markdown
+## ✨ Key Features
 
-**Backend**
-- Node.js
-- Express.js
-- REST APIs
+- 🤖 **AI-Powered Farming Assistant** — Get agricultural guidance through Google's Gemini AI.
+- 🌐 **Tamil & English Support** — Access farming assistance in regional and English languages.
+- 🌦️ **Live Weather Updates** — View current weather conditions and upcoming forecasts.
+- 🌱 **Weather-Based Crop Risk Alerts** — Understand potential weather risks and receive practical farming recommendations.
+- 📈 **Mandi Market Information** — Explore available agricultural prices and market comparisons.
+- 🎙️ **Voice Input** — Ask questions using browser-supported speech recognition.
+- 📍 **Location-Based Weather** — Access weather information for a selected location.
+- 💚 **Farmer-Friendly UI** — A simple interface designed to make agricultural information accessible.
 
-**AI & Data Sources**
-- Google Gemini API
-- Open-Meteo Weather API
-- CEDA agricultural market data API
+## 🛠️ Technology Stack
 
-## 🏗️ Project Architecture
+| Category | Technologies |
+|---|---|
+| Frontend | React.js, Vite, JavaScript, CSS |
+| Backend | Node.js, Express.js |
+| AI | Google Gemini API |
+| Weather Data | Open-Meteo API |
+| Agricultural Market Data | CEDA API |
+| UI Components | Lucide React |
+| Markdown Rendering | React Markdown, remark-gfm |
 
-```text
-KisanSetu-AI/
-├── server/
-│   ├── index.js
-│   └── data.js
-├── src/
-│   ├── main.jsx
-│   └── style.css
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md
-```
+## 🔄 How It Works
 
-## ⚙️ Installation and Setup
+1. **Farmer Interaction:** The farmer asks a question in Tamil or English.
+2. **AI Processing:** The backend processes the request and uses Gemini AI to generate relevant assistance.
+3. **Data Integration:** The platform retrieves available weather and agricultural market information from connected data sources.
+4. **Risk Assessment:** Weather conditions are evaluated to provide relevant farming alerts and recommendations.
+5. **Actionable Guidance:** The farmer receives information through an easy-to-understand interface.
 
-### 1. Clone the repository
+## 🎯 Our Goal
 
-```bash
-git clone https://github.com/abijithalagesan/KisanSetu-AI.git
-cd KisanSetu-AI
-```
+To make agricultural information more accessible, understandable, and useful for farmers by bringing AI-powered assistance and relevant data together in one platform.
 
-### 2. Install dependencies
+## 🏆 Hackathon Achievement
 
-```bash
-npm install
-```
+🥈 **Second Place — AI Hackathon & Technical Showcase**
 
-### 3. Configure environment variables
+**Event:** DevFest on Campus – Chennai 2026  
+**Organized by:** Google Developer Groups (GDG) Chennai  
+**Prize:** ₹6,000 Gift Voucher
 
-Create a `.env` file in the project root and add the API keys required by your backend configuration.
+We are proud to have presented KisanSetu AI as part of this hackathon and technical showcase.
 
-```env
-GEMINI_API_KEY=your_gemini_api_key
-CEDA_API_KEY=your_ceda_api_key
-```
+## 🚀 Future Enhancements
 
-Use the exact environment variable names expected by your backend. Configure any other required variables according to your implementation.
-
-**Important:** Never commit API keys or your `.env` file to GitHub.
-
-### 4. Start the backend
-
-Run the backend command configured in your `package.json`. For example, if the script is named `server`:
-
-```bash
-npm run server
-```
-
-### 5. Start the frontend
-
-Open another terminal in VS Code and run:
-
-```bash
-npm run dev
-```
-
-Open the local URL displayed by Vite in your terminal.
-
-## 🌍 Vision
-
-Our vision is to make agricultural information more accessible to farmers by combining artificial intelligence, weather intelligence, and agricultural market data in a simple multilingual platform.
-
-KisanSetu AI aims to bridge the gap between technology and agriculture, helping farmers make better-informed decisions.
-
-## 🏆 Achievement
-
-🥈 **Secured 2nd Place in a Hackathon**
-
-Recognized for our KisanSetu AI project, with a **₹6,000 gift voucher** awarded as the prize.
-
-## 🔮 Future Enhancements
-
-- Personalized crop recommendations.
+- Personalized crop recommendations based on location and season.
+- Improved mandi price comparison across more markets.
+- Agricultural government scheme discovery and eligibility guidance.
+- Enhanced voice interaction in regional languages.
 - Soil and crop health analysis.
-- Improved mandi price comparison and market coverage.
-- Government agricultural scheme discovery.
-- Expanded voice-based interaction in regional languages.
-- More location-specific agricultural recommendations.
+- More localized and personalized farming recommendations.
 
-## 👨‍💻 Developed By
+## 👥 Team Members
 
-**Abijith A and Team**
+- **Abijith A**
+- **Sri Vardhini S R**
+- **Swathi S**
+- **Varunika S**
 
-GitHub: [@abijithalagesan](https://github.com/abijithalagesan)
+## 🌱 Our Vision
+
+We envision a future where every farmer can access useful agricultural information through accessible technology, regardless of language barriers or technical knowledge.
+
+**KisanSetu AI — Bridging Farmers and Intelligent Agriculture.** 🌾🤖
 
 ---
 
-⭐ If you find this project interesting, consider giving the repository a star!
-
-**KisanSetu AI — Connecting Farmers with Intelligent Agriculture.** 🌾
+*Developed with ❤️ for agriculture, innovation, and a smarter farming future.*
