@@ -1,48 +1,136 @@
-# KisanSetu AI — 5-hour hackathon starter
+# 🌾 KisanSetu AI
 
-A React + Vite frontend and Express backend for a Tamil/English agricultural decision-support demo.
+### AI-Powered Farming Assistant for Tamil Nadu Farmers
 
-## Important demo limitations
-- Mandi prices in `server/data.js` are **synthetic demo fixtures**, not live market data.
-- The weather tool is a **demo notice**, not a live forecast.
-- Scheme and crop content is a starter knowledge base. Verify all guidance against current official sources before real-world use.
-- The AI uses Gemini function calling when `GEMINI_API_KEY` is configured. Without a key, the backend returns a demo response and sample data.
+KisanSetu AI is an intelligent, multilingual agricultural assistant designed to help farmers make informed farming decisions through AI-powered guidance, live weather updates, crop-risk alerts, and agricultural market information.
 
-## Requirements
-- Node.js LTS and npm
-- Gemini API key from https://aistudio.google.com/app/apikey
+🏆 **Hackathon Achievement: 2nd Place Winner**  
+🎁 **Prize: ₹6,000 Gift Voucher**
 
-## Setup
-1. Unzip the project and open Terminal in the `kisansetu-ai` folder.
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Create your environment file:
-   ```bash
-   cp .env.example .env
-   ```
-4. Open `.env` and replace `replace_with_your_key` with your Gemini API key.
-5. Start frontend and backend:
-   ```bash
-   npm run dev
-   ```
-6. Open the Vite URL printed in Terminal, normally http://localhost:5173.
+---
 
-## Test prompts
-- `என் நெல் பயிர் அறுவடைக்கு தயாராகிறது. என்ன கவனிக்க வேண்டும்?`
-- `Compare paddy selling options for 10 quintals.`
-- `What crop insurance scheme information should I check?`
+## 🚀 Features
 
-## Suggested team split
-- Member 1: agent/tool calling and prompt behavior.
-- Member 2: backend, market calculations, data sources.
-- Member 3: frontend and responsive UI.
-- Member 4: curated scheme/crop documents, integration and testing.
+- 🤖 **AI Farming Assistant** — Get agricultural guidance using Google's Gemini AI.
+- 🌐 **Multilingual Support** — Interact in Tamil and English.
+- 🌦️ **Live Weather Updates** — Access current weather conditions and upcoming forecasts.
+- 🌱 **Crop Risk Alerts** — Receive weather-based risk assessments and farming recommendations.
+- 📈 **Mandi Price Information** — Explore agricultural market prices and compare available markets.
+- 🎙️ **Voice Input** — Ask farming questions using browser-supported speech recognition.
+- 📍 **Location-Based Weather** — Get weather information for your selected location.
+- 💡 **Farmer-Friendly Interface** — Designed to make agricultural information easier to access and understand.
 
-## Next improvements
-1. Replace synthetic market fixtures with current data from an official source, preserving timestamps and variety/unit compatibility.
-2. Integrate an approved weather API or publish only a clear official weather link.
-3. Replace demo crop guidance with curated official agricultural extension documents and source metadata.
-4. Add tests for market arithmetic, API errors and language behavior.
-5. Keep API keys only in `.env`; never expose them to frontend code or commit `.env`.
+## 🛠️ Tech Stack
+
+**Frontend**
+- React.js
+- Vite
+- JavaScript
+- CSS
+- Lucide React
+- React Markdown
+
+**Backend**
+- Node.js
+- Express.js
+- REST APIs
+
+**AI & Data Sources**
+- Google Gemini API
+- Open-Meteo Weather API
+- CEDA agricultural market data API
+
+## 🏗️ Project Architecture
+
+```text
+KisanSetu-AI/
+├── server/
+│   ├── index.js
+│   └── data.js
+├── src/
+│   ├── main.jsx
+│   └── style.css
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## ⚙️ Installation and Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/abijithalagesan/KisanSetu-AI.git
+cd KisanSetu-AI
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure environment variables
+
+Create a `.env` file in the project root and add the API keys required by your backend configuration.
+
+```env
+GEMINI_API_KEY=your_gemini_api_key
+CEDA_API_KEY=your_ceda_api_key
+```
+
+Use the exact environment variable names expected by your backend. Configure any other required variables according to your implementation.
+
+**Important:** Never commit API keys or your `.env` file to GitHub.
+
+### 4. Start the backend
+
+Run the backend command configured in your `package.json`. For example, if the script is named `server`:
+
+```bash
+npm run server
+```
+
+### 5. Start the frontend
+
+Open another terminal in VS Code and run:
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed by Vite in your terminal.
+
+## 🌍 Vision
+
+Our vision is to make agricultural information more accessible to farmers by combining artificial intelligence, weather intelligence, and agricultural market data in a simple multilingual platform.
+
+KisanSetu AI aims to bridge the gap between technology and agriculture, helping farmers make better-informed decisions.
+
+## 🏆 Achievement
+
+🥈 **Secured 2nd Place in a Hackathon**
+
+Recognized for our KisanSetu AI project, with a **₹6,000 gift voucher** awarded as the prize.
+
+## 🔮 Future Enhancements
+
+- Personalized crop recommendations.
+- Soil and crop health analysis.
+- Improved mandi price comparison and market coverage.
+- Government agricultural scheme discovery.
+- Expanded voice-based interaction in regional languages.
+- More location-specific agricultural recommendations.
+
+## 👨‍💻 Developed By
+
+**Abijith A and Team**
+
+GitHub: [@abijithalagesan](https://github.com/abijithalagesan)
+
+---
+
+⭐ If you find this project interesting, consider giving the repository a star!
+
+**KisanSetu AI — Connecting Farmers with Intelligent Agriculture.** 🌾
